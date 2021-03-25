@@ -4,6 +4,7 @@ cp $BUILD_PREFIX/share/gnuconfig/config.* ./build-aux
 
 set -e -o pipefail -x
 
+autoreconf -if
 ./configure --prefix=$PREFIX
 
 make

@@ -22,6 +22,8 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - make  # [unix]
+    - libtool  # [unix]
+    - automake  # [unix]
   host:
     - gettext
   run:
