@@ -14,4 +14,7 @@ autoreconf -if
 
 make
 make install
-make -v -v -v check
+
+if [[ $CONDA_BUILD_CROSS_COMPILATION != 1 && $target_platform != osx-arm64 ]]; then
+	make -v -v -v check
+fi
