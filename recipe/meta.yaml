@@ -24,6 +24,7 @@ requirements:
     - make  # [unix]
     - libtool  # [unix]
     - automake  # [unix]
+    - xz  # [unix]
   host:
     - gettext
   run:
