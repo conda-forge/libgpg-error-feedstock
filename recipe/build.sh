@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 # Get an updated config.sub and config.guess
-cp $BUILD_PREFIX/share/libtool/build-aux/config.* ./build-aux
+# cp $BUILD_PREFIX/share/libtool/build-aux/config.* ./build-aux
 
 set -e -o pipefail -x
 
 autoreconf -if
-./autogen.sh
 ./configure --prefix=$PREFIX
 
 make
