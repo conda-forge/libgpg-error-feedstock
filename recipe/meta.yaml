@@ -1,5 +1,5 @@
 {% set name = "libgpg-error" %}
-{% set version = "1.50" %}
+{% set version = "1.51" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,7 @@ package:
 
 source:
   url: https://gnupg.org/ftp/gcrypt/libgpg-error/{{ name }}-{{ version }}.tar.bz2
-  sha256: 69405349e0a633e444a28c5b35ce8f14484684518a508dc48a089992fe93e20a
-  patches:
-    # https://dev.gnupg.org/rEa59e902b887fd92337c9728f668cf9c89da3957a
-    - rEa59e902b887fd92337c9728f668cf9c89da3957a.patch
+  sha256: be0f1b2db6b93eed55369cdf79f19f72750c8c7c39fc20b577e724545427e6b2
 
 build:
   number: 0
