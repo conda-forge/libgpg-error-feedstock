@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libgpg-error-fe
 
 Home: https://www.gnupg.org/software/libgpg-error/index.html
 
-Package license: GPL-2.0-only
+Package license: LGPL-2.1-only
 
 Summary: a small library that originally defined common error values for all GnuPG components
 
