@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: libgpg-error
-  version: 1.55
+  version: "1.56"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://gnupg.org/ftp/gcrypt/libgpg-error/${{ name }}-${{ version }}.tar.bz2
-  sha256: 95b178148863f07d45df0cea67e880a79b9ef71f5d230baddc0071128516ef78
+  sha256: 82c3d2deb4ad96ad3925d6f9f124fe7205716055ab50e291116ef27975d169c0
 
 build:
   number: 0
@@ -24,13 +24,11 @@ requirements:
     - ${{ stdlib("c") }}
     - ${{ compiler('cxx') }}
     - if: unix
-      then: make
-    - if: unix
-      then: libtool
-    - if: unix
-      then: automake
-    - if: unix
-      then: xz-tools
+      then:
+        - make
+        - libtool
+        - automake
+        - xz-tools
     - if: osx
       then: gnuconfig
     - gettext-tools
