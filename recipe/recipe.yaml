@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: libgpg-error
-  version: "1.58"
+  version: "1.59"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://gnupg.org/ftp/gcrypt/libgpg-error/${{ name }}-${{ version }}.tar.bz2
-  sha256: f943aea9a830a8bd938e5124b579efaece24a3225ff4c3d27611a80ce1260c27
+  sha256: a19bc5087fd97026d93cb4b45d51638d1a25202a5e1fbc3905799f424cfa6134
 
 build:
   number: 0
