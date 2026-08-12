@@ -9,11 +9,11 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://gnupg.org/ftp/gcrypt/libgpg-error/${{ name }}-${{ version }}.tar.bz2
+  url: https://mirrors.dotsrc.org/gcrypt/libgpg-error/${{ name }}-${{ version }}.tar.bz2
   sha256: 7a85413f2bc354f4f8aa832b718af122e48965e9e0eb9012ee659c13c6385c93
 
 build:
-  number: 1
+  number: 2
   skip: win
 
 requirements:
